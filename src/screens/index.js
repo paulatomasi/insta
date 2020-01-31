@@ -1,1 +1,5 @@
+export { DirectMessageListScreen } from './direct-message-list/direct-message-list.screen'
 export { HomeScreen } from './home/home.screen'
+export { MyProfileScreen } from './my-profile/my-profile.screen'
+export { SearchScreen } from './search/search.screen'
+export { LikesScreen } from './likes/likes.screen'

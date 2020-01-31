@@ -1,11 +1,59 @@
-import { createAppContainer } from 'react-navigation';
-import { createStackNavigator } from 'react-navigation-stack';
+import { createAppContainer } from 'react-navigation'
+import { createStackNavigator } from 'react-navigation-stack'
+import { createBottomTabNavigator } from 'react-navigation-tabs'
 
-import { HomeScreen } from 'screens'
+import {
+  HomeScreen,
+  DirectMessageListScreen,
+  SearchScreen,
+  LikesScreen,
+  MyProfileScreen
+} from 'screens'
+
+const TabsHome = createBottomTabNavigator(
+  {
+    HomeScreen: {
+      screen: HomeScreen,
+      navigationOptions: {
+        title: 'Home',
+      },
+    },
+    SearchScreen: {
+      screen: SearchScreen,
+      navigationOptions: {
+        title: 'Search',
+      },
+    },
+    LikesScreen: {
+      screen: LikesScreen,
+      navigationOptions: {
+        title: 'Likes',
+      },
+    },
+    MyProfileScreen: {
+      screen: MyProfileScreen,
+      navigationOptions: {
+        title: 'Profile',
+      },
+    },
+  },
+  {
+    // tabBarOptions: {
+    //   showLabel: false,
+    // },
+    lazy: true,
+    swipeEnabled: false,
+    animationEnabled: false,
+  },
+)
 
 const AppNavigator = createStackNavigator({
-  Home: {
-    screen: HomeScreen,
+  Tabs: {
+    screen: TabsHome,
   },
-});
-export default createAppContainer(AppNavigator);
+  DirectMessageList: {
+    screen: DirectMessageListScreen,
+  },
+})
+
+export default createAppContainer(AppNavigator)
