@@ -38,9 +38,6 @@ const TabsHome = createBottomTabNavigator(
     },
   },
   {
-    // tabBarOptions: {
-    //   showLabel: false,
-    // },
     lazy: true,
     swipeEnabled: false,
     animationEnabled: false,

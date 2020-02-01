@@ -9,7 +9,8 @@ module.exports = {
     ['module-resolver',
       {
         alias: {
-          screens: './src/screens/',
+          'screens': './ src / screens / ',
+          'theme-consts': './src/config/theme.js',
         },
       },
     ],
