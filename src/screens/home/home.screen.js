@@ -4,7 +4,7 @@ import { SafeAreaView, FlatList } from 'react-native'
 import Post from './components/post.component'
 import ButtonUpdate from './components/button-update.component'
 
-import { INavBar } from 'components'
+import { INavBar } from '@components'
 
 import { loadFeed } from '../../store/actions/feed-actions'
 

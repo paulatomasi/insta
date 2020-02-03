@@ -3,9 +3,9 @@ import  { Provider } from 'react-redux'
 import { AppRegistry } from 'react-native'
 import App from './App'
 import { Theme } from 'theme-consts'
+import storeConfig from './src/store/storeConfig'
 
 Theme.build()
-import storeConfig from './src/store/storeConfig'
 
 
 const store = storeConfig()
