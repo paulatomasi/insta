@@ -44,13 +44,16 @@ const TabsHome = createBottomTabNavigator(
   },
 )
 
-const AppNavigator = createStackNavigator({
-  Tabs: {
-    screen: TabsHome,
+const AppNavigator = createStackNavigator(
+  {
+    Tabs: {
+      screen: TabsHome,
+    },
+    DirectMessageList: {
+      screen: DirectMessageListScreen,
+    },
   },
-  DirectMessageList: {
-    screen: DirectMessageListScreen,
-  },
-})
+  { headerMode: 'none' },
+)
 
 export default createAppContainer(AppNavigator)
