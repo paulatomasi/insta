@@ -1,3 +1,4 @@
+import React from 'react'
 import { createAppContainer } from 'react-navigation'
 import { createStackNavigator } from 'react-navigation-stack'
 import { createBottomTabNavigator } from 'react-navigation-tabs'
@@ -9,8 +10,7 @@ import {
   LikesScreen,
   MyProfileScreen
 } from 'screens'
-
-import { ITabBar } from 'components'
+import { ITabBar, IIcon } from 'components'
 
 const TabsHome = createBottomTabNavigator(
   {
@@ -18,33 +18,41 @@ const TabsHome = createBottomTabNavigator(
       screen: HomeScreen,
       navigationOptions: {
         title: 'Home',
+        tabBarIcon: () => (
+          <IIcon name="home_icon" style={{ fontSize: 32 }} />
+        ),
       },
     },
     SearchScreen: {
       screen: SearchScreen,
       navigationOptions: {
         title: 'Search',
+        tabBarIcon: () => (
+          <IIcon name="search_icon" style={{ fontSize: 32 }} />
+        ),
       },
     },
     LikesScreen: {
       screen: LikesScreen,
       navigationOptions: {
         title: 'Likes',
+        tabBarIcon: () => (
+          <IIcon name="like_icon" style={{ fontSize: 32 }} />
+        ),
       },
     },
     MyProfileScreen: {
       screen: MyProfileScreen,
       navigationOptions: {
         title: 'Profile',
+        tabBarIcon: () => (
+          <IIcon name="profile_icon" style={{ fontSize: 32 }} />
+        ),
       },
     },
   },
   {
     tabBarComponent: ITabBar,
-    // tabBarOptions: {
-    // activeTintColor: Theme.COLORS.$red,
-    // inactiveTintColor: Theme.COLORS.$gray63,
-    // },
     lazy: true,
     swipeEnabled: false,
     animationEnabled: false,
