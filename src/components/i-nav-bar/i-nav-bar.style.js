@@ -9,22 +9,30 @@ const Styles = EStyleSheet.create({
         height: containerHeight,
         backgroundColor: '$colors.$background',
         flexDirection: 'row',
-        alignItems: 'center',
+        alignItems: 'flex-end',
         justifyContent: 'space-between',
         paddingTop: statusBarHeight,
         paddingLeft: 8,
         paddingRight: 12,
+        borderBottomWidth: 0.5,
+        borderColor: '$colors.$lightGrey',
     },
     logo: {
         height: 28,
         width: 105,
+        marginBottom: 6,
     },
     buttonContainer: {
         height: 32,
         width: 32,
         justifyContent: 'center',
         alignItems: 'center',
-    }
+        marginBottom: 6,
+    },
+    icon: {
+        fontSize: 32,
+        color: '$colors.$darkGrey',
+    },
 })
 
 export default Styles
