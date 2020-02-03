@@ -161,7 +161,6 @@
 				0358D5737FA4693BD061B852 /* Pods-instaTests.debug.xcconfig */,
 				11FBC90D286447CD41129A66 /* Pods-instaTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -308,6 +307,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
