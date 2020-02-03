@@ -13,7 +13,8 @@ module.exports = {
           'screens': './src/screens/',
           'theme-consts': './src/config/theme.js',
           'assets': './src/assets/',
-          'services': './src/services'
+          'services': './src/services',
+          'config': './src/config',
         },
       },
     ],
