@@ -10,6 +10,8 @@ import {
   MyProfileScreen
 } from 'screens'
 
+import { ITabBar } from 'components'
+
 const TabsHome = createBottomTabNavigator(
   {
     HomeScreen: {
@@ -38,6 +40,11 @@ const TabsHome = createBottomTabNavigator(
     },
   },
   {
+    tabBarComponent: ITabBar,
+    // tabBarOptions: {
+    // activeTintColor: Theme.COLORS.$red,
+    // inactiveTintColor: Theme.COLORS.$gray63,
+    // },
     lazy: true,
     swipeEnabled: false,
     animationEnabled: false,

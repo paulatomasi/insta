@@ -9,10 +9,11 @@ module.exports = {
     ['module-resolver',
       {
         alias: {
-          components: './src/components',
-          screens: './src/screens/',
+          'components': './src/components',
+          'screens': './src/screens/',
           'theme-consts': './src/config/theme.js',
-          assets: './src/assets/',
+          'assets': './src/assets/',
+          'services': './src/services'
         },
       },
     ],
