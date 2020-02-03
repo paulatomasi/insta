@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { StatusBar, View, Text } from 'react-native'
-import { IImage, ITouchable } from 'components'
 
+import { IImage, ITouchable } from 'components'
 import logoImage from 'assets/images/logo.png'
 
 import Styles from './i-nav-bar.style'
