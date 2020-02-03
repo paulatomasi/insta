@@ -4,18 +4,19 @@ import { createStackNavigator } from 'react-navigation-stack'
 import { createBottomTabNavigator } from 'react-navigation-tabs'
 
 import {
-  HomeScreen,
   DirectMessageListScreen,
   SearchScreen,
   LikesScreen,
-  MyProfileScreen
+  MyProfileScreen,
+  CameraScreen,
+  HomeScreenConnected
 } from 'screens'
 import { ITabBar, IIcon } from 'components'
 
 const TabsHome = createBottomTabNavigator(
   {
     HomeScreen: {
-      screen: HomeScreen,
+      screen: HomeScreenConnected,
       navigationOptions: {
         title: 'Home',
         tabBarIcon: () => (
